@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Live Weather App</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="weather-app">
+    <h1>Weather Application</h1>
+
+    <div class="form-group">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <input type="text" id="country" placeholder="Enter country code (e.g., IN)" />
+      <button id="getWeatherBtn" onclick="getWeather()">Get Weather</button>
+    </div>
+    <h2>Weather details</h2>
+    <div id="weatherResult"></div>
+    <script src="./script.js"></script>
+  </div>
+</body>
+
+</html>
