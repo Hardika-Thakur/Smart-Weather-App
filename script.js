@@ -58,6 +58,8 @@ function getCurrentLocation(lat, lon) {// Replace with your real API key
 }
 
 function getLocation() {
+    document.getElementById('city').value = '';
+    document.getElementById('country').value = '';
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             position => {
