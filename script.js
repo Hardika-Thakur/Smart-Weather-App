@@ -57,7 +57,7 @@ function getCurrentLocation(lat, lon) {// Replace with your real API key
         });
 }
 
-function getLocation() {
+window.onload = function () {
     document.getElementById('city').value = '';
     document.getElementById('country').value = '';
     if (navigator.geolocation) {
@@ -75,7 +75,6 @@ function getLocation() {
         weather.innerText = "Geolocation is not supported by this browser.";
     }
 }
-window.onload = getLocation;
 
 function getWeatherEmoji(condition) {
     const body = document.body;
